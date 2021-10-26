@@ -1,5 +1,5 @@
 CUR=${1:?target file}
-if ! test -e "$CUR"
+if ! test -f "$CUR"
 then echo "$CUR does not exist" ; exit 1
 fi
 DIR=$(dirname "$CUR")
